@@ -4,11 +4,18 @@ HigherLower Rules:
 2)All players will be asked a question in a configurable ammount of time(default 30sec)
 3)The First Player will answer the question with a % in 20sec
 4)The other players will aswer with higher, lower, much higher, much lower based on the answer of the player from 3) in 10 sec
-	a)He gets 350 points if he gets the exaact %
-5)Player from 3 wins a configurated ammount of points(default 100) if the correct answer is +-20%
-6)The other players get points based on the following rules:
-	a)higher = wins a configurated ammount of points equal to 5)	
-	b)much higher = 2x wins a configurated ammount of points equal to 5)  >+20%
-	c)lower = wins a configurated ammount of points equal to 5)
-	d)much lower = 2x wins a configurated ammount of points equal to 5)   <-20%
+	a)He gets 350 points if he gets the exact %
+
+5)The other players get points based on the following rules:
+	a)higher = wins a configurated ammount of points (default 100)	
+	b)much higher = 2x wins a configurated ammount of points  >+20% (default 200)	
+	c)lower = wins a configurated ammount of points (default 100)	
+	d)much lower = 2x wins a configurated ammount of points   <-20% (default 200)
+
+6)The Round ends after the player submits
+
+
+
+
+
 

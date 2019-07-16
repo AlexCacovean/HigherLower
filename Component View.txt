@@ -1,0 +1,46 @@
+UI
+	Player
+	Questions
+	Points/Score
+	AnswerTime
+	PlayerResponse
+	PointsEvaluation
+	PlayerTurn
+	Winner
+	Leaderboard
+	InputValidation
+
+Logic
+{
+Players
+currentTurn
+GetQuestion
+TimeLimit
+Answer
+ValidateInput
+PointComputation
+}
+
+Questions
+{
+GetQuestion
+AddQuestion + AddAnswer
+[]RemoveQuestion
+GetAnswerForQuestion
+LoadQuestions(File)
+[]ExternalParsers
+}
+
+Leaderboard
+{
+PointCompute
+AddPoints
+GetWinner
+ShowLeaderboard
+}
+
+ 
+UI
+{
+
+}
