@@ -15,23 +15,32 @@ namespace HigherLower
         Player player = new Player();
         Question question = new Question();
         int i;
-        public int GivePointsToPlayer()
+        public void GivePointsToCurrentPlayer()
         {
-            int AnswerType = question.
+            int AnswerType =8;
+            if (i <= 7)
+            {
+                AnswerType = question.CompareAnswers(PlayerList.AllPlayers[i].CurrentAnswer);
+            }
+            
             switch (AnswerType)
             {
                 case 0:
-                    return 0;
+                    PlayerList.AllPlayers[i].AddPoints(0);
+                    break;
                 case 1:
-                    return 200;
+                    PlayerList.AllPlayers[i].AddPoints(200);
+                    break;
                 case 2:
-                    return 100;
+                    PlayerList.AllPlayers[i].AddPoints(100);
+                    break;
                 case 3:
-                    return 100;
+                    PlayerList.AllPlayers[i].AddPoints(100);
+                    break;
                 case 4:
-                    return 200;
+                    PlayerList.AllPlayers[i].AddPoints(200);
+                    break;
             }
-            return 0;
         }
         public void ChangePlayer()
         {
@@ -59,6 +68,7 @@ namespace HigherLower
             }
             else
             {
+                UpdateTable();
                 MessageBox.Show("AllPlayersHaveAnswered");
             }
         }
@@ -91,37 +101,62 @@ namespace HigherLower
             FirstPlayerAnswerLabel.Text = q.FirstPlayerAnswer.ToString();
             
         }
+
+        //private void HigherLowerAnswerButtonClick()
+        //{
+        //    GetAnswerFromPlayer();
+        //    ChangePlayer();
+        //    UpdateTable();
+        //    PlayerList.AllPlayers[i].CurrentAnswer = possibleAnswers.MuchHigher;
+        //    GivePointsToCurrentPlayer();
+        //}
      
         private void MuchHigherButton_Click(object sender, EventArgs e)
         {
             GetAnswerFromPlayer();
             ChangePlayer();
-            UpdateTable();
-            PlayerList.AllPlayers[i].CurrentAnswer = possibleAnswers.MuchHigher;
+            if (i <= 7)
+            {
+                PlayerList.AllPlayers[i].CurrentAnswer = possibleAnswers.MuchHigher;
+            }
+            GivePointsToCurrentPlayer();
+            //UpdateTable();
         }
 
         private void HigherButton_Click(object sender, EventArgs e)
         {
             GetAnswerFromPlayer();
             ChangePlayer();
-            UpdateTable();
-            PlayerList.AllPlayers[i].CurrentAnswer = possibleAnswers.Higher;
+            if (i <= 7) 
+            {
+                PlayerList.AllPlayers[i].CurrentAnswer = possibleAnswers.Higher;
+            }
+            GivePointsToCurrentPlayer();
+            //UpdateTable();
         }
 
         private void LowerButton_Click(object sender, EventArgs e)
         {
             GetAnswerFromPlayer();
             ChangePlayer();
-            UpdateTable();
-            PlayerList.AllPlayers[i].CurrentAnswer = possibleAnswers.Lower;
+            if (i <= 7)
+            {
+                PlayerList.AllPlayers[i].CurrentAnswer = possibleAnswers.Lower;
+            }
+            GivePointsToCurrentPlayer();
+            //UpdateTable();
         }
 
         private void MuchLowerButton_Click(object sender, EventArgs e)
         {
             GetAnswerFromPlayer();
             ChangePlayer();
-            UpdateTable();
-            PlayerList.AllPlayers[i].CurrentAnswer = possibleAnswers.Lower;
+            if (i <= 7)
+            {
+                PlayerList.AllPlayers[i].CurrentAnswer = possibleAnswers.MuchLower;
+            }
+            GivePointsToCurrentPlayer();
+            //UpdateTable();
         }
         public void UpdateTable()
         {

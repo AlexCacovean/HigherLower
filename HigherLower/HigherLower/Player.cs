@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HigherLower
 {
-    enum possibleAnswers
+    public enum possibleAnswers
     {
         MuchHigher,
         Higher,
@@ -33,7 +33,7 @@ namespace HigherLower
             Points = 0;
             IsStartingPlayer = false;
         }
-        private void AddPoints(int newPoints)
+        public void AddPoints(int newPoints)
         {
             if(newPoints > 0)
             {

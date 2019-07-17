@@ -54,7 +54,7 @@ namespace HigherLower
         //    return 0;
         //}
 
-         int CompareAnswers(possibleAnswers PlayerAnswer)
+        public int CompareAnswers(possibleAnswers PlayerAnswer)
         {
             if(FirstPlayerAnswer + 15 < CorrectAnswer&&
                 PlayerAnswer == possibleAnswers.MuchHigher)
