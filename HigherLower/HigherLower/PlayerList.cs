@@ -13,6 +13,7 @@ namespace HigherLower
         static public Player[] AllPlayers = new Player[8];
         static public int NumberOfPlayers;
         static public int CurrentPlayingPlayer;
+        static public bool AllPlayersHaveAnsweredThisRound;
         static public void AddPlayerInVector(Player p)
         {
             
@@ -81,6 +82,18 @@ namespace HigherLower
             {
                 PlayerList.AllPlayers[i] = new Player();
             }
+        }
+
+        static public bool TestIfAllPlayersHaveAnswered()
+        {
+            foreach(Player p in PlayerList.AllPlayers)
+            {
+                if (p.UserName != "NewUser" &&
+                    p.HasAnsweredThisRound == false)
+                    return false;
+            }
+
+            return true;
         }
     }
 }

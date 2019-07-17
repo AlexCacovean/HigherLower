@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +15,25 @@ namespace HigherLower
         Player player = new Player();
         Question question = new Question();
         int i;
+
+        private void ReInitializePlayers()
+        {
+            foreach (Player p in PlayerList.AllPlayers)
+            {
+                p.IsStartingPlayer = false;
+                p.HasAnsweredThisRound = false;
+            }
+            PlayerList.AllPlayersHaveAnsweredThisRound = false;
+            i = 0;
+        }
+        public void ChangeTurn()
+        {
+            this.Close();
+            ReInitializePlayers();
+            FirstPlayerView nextRoundView = new FirstPlayerView();
+            nextRoundView.Show();
+        }
+
         public void GivePointsToCurrentPlayer()
         {
             int AnswerType =8;
@@ -42,6 +61,7 @@ namespace HigherLower
                     break;
             }
         }
+
         public void ChangePlayer()
         {
             i = 0;
@@ -69,13 +89,13 @@ namespace HigherLower
             else
             {
                 UpdateTable();
-                MessageBox.Show("AllPlayersHaveAnswered");
+                ChangeTurn();
             }
         }
 
-        public int GetNextPlayersName(int i)
+        public int GetNextPlayersId(int i)
         {
-            for(int j =i+1; j<PlayerList.NumberOfPlayers;j++)
+            for(int j =i; j<PlayerList.NumberOfPlayers;j++)
             {
                 if (PlayerList.AllPlayers[j].HasAnsweredThisRound == false
                     && PlayerList.AllPlayers[j].IsStartingPlayer == false
@@ -95,7 +115,7 @@ namespace HigherLower
         {
             InitializeComponent();
             UpdateTable();
-            CurrentPlayerUserNameLabel.Text = PlayerList.AllPlayers[GetNextPlayersName(0)].UserName;
+            CurrentPlayerUserNameLabel.Text = PlayerList.AllPlayers[GetNextPlayersId(0)].UserName;
             QuestionLabel.Text = q.Text;
             question = q;
             FirstPlayerAnswerLabel.Text = q.FirstPlayerAnswer.ToString();
