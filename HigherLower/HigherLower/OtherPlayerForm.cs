@@ -79,9 +79,9 @@ namespace HigherLower
             }
             if(i < PlayerList.NumberOfPlayers)
             {
-                if(GetNextPlayersName(i) != -1)
+                if(GetNextPlayersId(i) != -1)
                 {
-                    CurrentPlayerUserNameLabel.Text = PlayerList.AllPlayers[GetNextPlayersName(i)].UserName;
+                    CurrentPlayerUserNameLabel.Text = PlayerList.AllPlayers[GetNextPlayersId(i)].UserName;
                 }
                 PlayerList.AllPlayers[i].HasAnsweredThisRound = true;
                 //MessageBox.Show(PlayerList.AllPlayers[i].UserName + "  has answered yet");
