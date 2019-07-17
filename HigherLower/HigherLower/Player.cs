@@ -16,7 +16,7 @@ namespace HigherLower
     class Player
     {
         public string UserName;
-        private int Points;
+        public int Points;
         public bool IsStartingPlayer;
         public bool HasAnsweredThisRound;
         public possibleAnswers CurrentAnswer { get; set; }
@@ -33,13 +33,18 @@ namespace HigherLower
             Points = 0;
             IsStartingPlayer = false;
         }
-        public void AddPoints(int newPoints)
+        private void AddPoints(int newPoints)
         {
             if(newPoints > 0)
             {
                 Points = Points + newPoints;
             }
         }
+
+        //public void CalculatePoints()
+        //{
+        //    Question.Give
+        //}
 
     }
 }

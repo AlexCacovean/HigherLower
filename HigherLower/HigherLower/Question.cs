@@ -34,7 +34,27 @@ namespace HigherLower
 
             return true;
         }
-        int CompareAnswers(possibleAnswers PlayerAnswer)
+
+        //int GivePointsToPlayer(possibleAnswers PlayerAnswer)
+        //{
+        //    int AnswerType = CompareAnswers(PlayerAnswer);
+        //    switch (AnswerType)
+        //    {
+        //        case 0:
+        //            return 0;
+        //        case 1:
+        //            return 200;
+        //        case 2:
+        //            return 100;
+        //        case 3:
+        //            return 100;
+        //        case 4:
+        //            return 200;
+        //    }
+        //    return 0;
+        //}
+
+         int CompareAnswers(possibleAnswers PlayerAnswer)
         {
             if(FirstPlayerAnswer + 15 < CorrectAnswer&&
                 PlayerAnswer == possibleAnswers.MuchHigher)

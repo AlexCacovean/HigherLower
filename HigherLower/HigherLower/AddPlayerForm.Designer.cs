@@ -56,12 +56,12 @@
             this.listBox1.FormattingEnabled = true;
             this.listBox1.Location = new System.Drawing.Point(528, 90);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(120, 95);
+            this.listBox1.Size = new System.Drawing.Size(163, 199);
             this.listBox1.TabIndex = 2;
             // 
             // StartButton
             // 
-            this.StartButton.Location = new System.Drawing.Point(393, 272);
+            this.StartButton.Location = new System.Drawing.Point(356, 355);
             this.StartButton.Name = "StartButton";
             this.StartButton.Size = new System.Drawing.Size(75, 23);
             this.StartButton.TabIndex = 3;

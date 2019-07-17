@@ -34,7 +34,10 @@ namespace HigherLower
 
                 UserNameTextBox.Clear();
                 if (PlayerList.IsGameFull())
+                {
                     AddPlayerButton.Hide();
+                    UserNameTextBox.Hide();
+                }
 
                 if (PlayerList.AreEnoughPlayers())
                     StartButton.Show();
