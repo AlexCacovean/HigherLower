@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace HigherLower
 {
@@ -20,35 +21,32 @@ namespace HigherLower
 
         static public void InitializeQuestions()
         {
-            AllQuestions.Add(new Question
-            {
-                Text = "What percentage of people have tried talking police officers out of ticketing or arresting them?",
-                CorrectAnswer = 38
-            });
-
-            AllQuestions.Add(new Question
-            {
-                Text = "What percentage of people have woken up before 5 a.m. to attend Black Friday sales?",
-                CorrectAnswer = 39
-            });
-
-            AllQuestions.Add(new Question
-            {
-                Text = "What percentage of people have peed in public pools?",
-                CorrectAnswer = 66
-            });
-
-            AllQuestions.Add(new Question
-            {
-                Text = "What percentage of people take their Oreos apart before eating them?",
-                CorrectAnswer = 46
-            });
-
-            AllQuestions.Add(new Question
-            {
-                Text = "What percentage of people believe there are aliens out there somewhere in the universe?",
-                CorrectAnswer = 85
-            });
+            string textFilePath = @"C:\Users\Alex\Documents\HigherLower\Questions.txt";
+            ReadQuestionsFromFile(textFilePath);
         }
+        static private void ReadQuestionsFromFile(string fileName)
+        {
+            try
+            {
+                StreamReader sr = new StreamReader(fileName);
+                string line;
+                while((line = sr.ReadLine()) != null)
+                {
+                    string name = line.Split('*')[0];
+                    int answer = Convert.ToInt32(line.Split('*')[1]);
+                    QuestionList.AllQuestions.Add(new Question {
+                        Text = name,
+                        CorrectAnswer = answer
+                    });
+                }
+                sr.Close();
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+
+        }
+
     }
 }
