@@ -33,35 +33,31 @@
             this.LowerButton = new System.Windows.Forms.Button();
             this.HigherButton = new System.Windows.Forms.Button();
             this.QuestionLabel = new System.Windows.Forms.Label();
-            this.FirstPlayerAnswerLabel = new System.Windows.Forms.Label();
+            this.Player1 = new System.Windows.Forms.Label();
             this.TextLabel = new System.Windows.Forms.Label();
             this.CurrentPlayerUserNameLabel = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.ScoreLabel = new System.Windows.Forms.Label();
-            this.NameLabel = new System.Windows.Forms.Label();
+            this.Player2Points = new System.Windows.Forms.Label();
+            this.Player3Points = new System.Windows.Forms.Label();
+            this.Player5Points = new System.Windows.Forms.Label();
+            this.Player4Points = new System.Windows.Forms.Label();
+            this.Player6Points = new System.Windows.Forms.Label();
+            this.Player7Points = new System.Windows.Forms.Label();
+            this.Player8Points = new System.Windows.Forms.Label();
+            this.Player8 = new System.Windows.Forms.Label();
+            this.Player7 = new System.Windows.Forms.Label();
+            this.Player3 = new System.Windows.Forms.Label();
+            this.Player4 = new System.Windows.Forms.Label();
+            this.Player5 = new System.Windows.Forms.Label();
+            this.Player6 = new System.Windows.Forms.Label();
+            this.Player2 = new System.Windows.Forms.Label();
+            this.Player1Points = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // MuchHigherButton
             // 
-            this.MuchHigherButton.Location = new System.Drawing.Point(498, 488);
-            this.MuchHigherButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.MuchHigherButton.Location = new System.Drawing.Point(68, 312);
             this.MuchHigherButton.Name = "MuchHigherButton";
-            this.MuchHigherButton.Size = new System.Drawing.Size(129, 35);
+            this.MuchHigherButton.Size = new System.Drawing.Size(86, 23);
             this.MuchHigherButton.TabIndex = 12;
             this.MuchHigherButton.Text = "Much Higher";
             this.MuchHigherButton.UseVisualStyleBackColor = true;
@@ -69,10 +65,9 @@
             // 
             // MuchLowerButton
             // 
-            this.MuchLowerButton.Location = new System.Drawing.Point(498, 555);
-            this.MuchLowerButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.MuchLowerButton.Location = new System.Drawing.Point(68, 356);
             this.MuchLowerButton.Name = "MuchLowerButton";
-            this.MuchLowerButton.Size = new System.Drawing.Size(129, 35);
+            this.MuchLowerButton.Size = new System.Drawing.Size(86, 23);
             this.MuchLowerButton.TabIndex = 11;
             this.MuchLowerButton.Text = "Much Lower";
             this.MuchLowerButton.UseVisualStyleBackColor = true;
@@ -80,10 +75,9 @@
             // 
             // LowerButton
             // 
-            this.LowerButton.Location = new System.Drawing.Point(327, 555);
-            this.LowerButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.LowerButton.Location = new System.Drawing.Point(68, 272);
             this.LowerButton.Name = "LowerButton";
-            this.LowerButton.Size = new System.Drawing.Size(129, 35);
+            this.LowerButton.Size = new System.Drawing.Size(86, 23);
             this.LowerButton.TabIndex = 10;
             this.LowerButton.Text = "Lower";
             this.LowerButton.UseVisualStyleBackColor = true;
@@ -91,10 +85,9 @@
             // 
             // HigherButton
             // 
-            this.HigherButton.Location = new System.Drawing.Point(327, 488);
-            this.HigherButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.HigherButton.Location = new System.Drawing.Point(68, 228);
             this.HigherButton.Name = "HigherButton";
-            this.HigherButton.Size = new System.Drawing.Size(129, 35);
+            this.HigherButton.Size = new System.Drawing.Size(86, 23);
             this.HigherButton.TabIndex = 9;
             this.HigherButton.Text = "Higher";
             this.HigherButton.UseVisualStyleBackColor = true;
@@ -103,254 +96,217 @@
             // QuestionLabel
             // 
             this.QuestionLabel.AutoSize = true;
-            this.QuestionLabel.Location = new System.Drawing.Point(152, 98);
-            this.QuestionLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.QuestionLabel.Location = new System.Drawing.Point(101, 64);
             this.QuestionLabel.Name = "QuestionLabel";
-            this.QuestionLabel.Size = new System.Drawing.Size(0, 20);
+            this.QuestionLabel.Size = new System.Drawing.Size(70, 13);
             this.QuestionLabel.TabIndex = 14;
+            this.QuestionLabel.Text = "QuestionText";
             // 
-            // FirstPlayerAnswerLabel
+            // Player1
             // 
-            this.FirstPlayerAnswerLabel.AutoSize = true;
-            this.FirstPlayerAnswerLabel.Location = new System.Drawing.Point(117, 237);
-            this.FirstPlayerAnswerLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.FirstPlayerAnswerLabel.Name = "FirstPlayerAnswerLabel";
-            this.FirstPlayerAnswerLabel.Size = new System.Drawing.Size(175, 20);
-            this.FirstPlayerAnswerLabel.TabIndex = 15;
-            this.FirstPlayerAnswerLabel.Text = "FirstPlayerAnswerLabel";
+            this.Player1.AutoSize = true;
+            this.Player1.Location = new System.Drawing.Point(78, 154);
+            this.Player1.Name = "Player1";
+            this.Player1.Size = new System.Drawing.Size(71, 13);
+            this.Player1.TabIndex = 15;
+            this.Player1.Text = "Player1Points";
             // 
             // TextLabel
             // 
             this.TextLabel.AutoSize = true;
-            this.TextLabel.Location = new System.Drawing.Point(117, 168);
-            this.TextLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.TextLabel.Location = new System.Drawing.Point(78, 109);
             this.TextLabel.Name = "TextLabel";
-            this.TextLabel.Size = new System.Drawing.Size(113, 20);
+            this.TextLabel.Size = new System.Drawing.Size(76, 13);
             this.TextLabel.TabIndex = 16;
             this.TextLabel.Text = "Current Player:";
             // 
             // CurrentPlayerUserNameLabel
             // 
             this.CurrentPlayerUserNameLabel.AutoSize = true;
-            this.CurrentPlayerUserNameLabel.Location = new System.Drawing.Point(237, 168);
-            this.CurrentPlayerUserNameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.CurrentPlayerUserNameLabel.Location = new System.Drawing.Point(158, 109);
             this.CurrentPlayerUserNameLabel.Name = "CurrentPlayerUserNameLabel";
-            this.CurrentPlayerUserNameLabel.Size = new System.Drawing.Size(220, 20);
+            this.CurrentPlayerUserNameLabel.Size = new System.Drawing.Size(146, 13);
             this.CurrentPlayerUserNameLabel.TabIndex = 17;
             this.CurrentPlayerUserNameLabel.Text = "CurrentPlayerUserNameLabel";
             // 
-            // label9
+            // Player2Points
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(986, 366);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(51, 20);
-            this.label9.TabIndex = 35;
-            this.label9.Text = "Score";
+            this.Player2Points.AutoSize = true;
+            this.Player2Points.Location = new System.Drawing.Point(575, 135);
+            this.Player2Points.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Player2Points.Name = "Player2Points";
+            this.Player2Points.Size = new System.Drawing.Size(71, 13);
+            this.Player2Points.TabIndex = 52;
+            this.Player2Points.Text = "Player2Points";
             // 
-            // label10
+            // Player3Points
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(896, 366);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(51, 20);
-            this.label10.TabIndex = 34;
-            this.label10.Text = "Name";
+            this.Player3Points.AutoSize = true;
+            this.Player3Points.Location = new System.Drawing.Point(575, 154);
+            this.Player3Points.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Player3Points.Name = "Player3Points";
+            this.Player3Points.Size = new System.Drawing.Size(71, 13);
+            this.Player3Points.TabIndex = 51;
+            this.Player3Points.Text = "Player3Points";
             // 
-            // label11
+            // Player5Points
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(986, 403);
-            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(51, 20);
-            this.label11.TabIndex = 33;
-            this.label11.Text = "Score";
+            this.Player5Points.AutoSize = true;
+            this.Player5Points.Location = new System.Drawing.Point(575, 193);
+            this.Player5Points.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Player5Points.Name = "Player5Points";
+            this.Player5Points.Size = new System.Drawing.Size(71, 13);
+            this.Player5Points.TabIndex = 50;
+            this.Player5Points.Text = "Player5Points";
             // 
-            // label12
+            // Player4Points
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(896, 403);
-            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(51, 20);
-            this.label12.TabIndex = 32;
-            this.label12.Text = "Name";
+            this.Player4Points.AutoSize = true;
+            this.Player4Points.Location = new System.Drawing.Point(575, 174);
+            this.Player4Points.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Player4Points.Name = "Player4Points";
+            this.Player4Points.Size = new System.Drawing.Size(71, 13);
+            this.Player4Points.TabIndex = 49;
+            this.Player4Points.Text = "Player4Points";
             // 
-            // label13
+            // Player6Points
             // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(986, 443);
-            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(51, 20);
-            this.label13.TabIndex = 31;
-            this.label13.Text = "Score";
+            this.Player6Points.AutoSize = true;
+            this.Player6Points.Location = new System.Drawing.Point(575, 216);
+            this.Player6Points.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Player6Points.Name = "Player6Points";
+            this.Player6Points.Size = new System.Drawing.Size(71, 13);
+            this.Player6Points.TabIndex = 48;
+            this.Player6Points.Text = "Player6Points";
             // 
-            // label14
+            // Player7Points
             // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(896, 443);
-            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(51, 20);
-            this.label14.TabIndex = 30;
-            this.label14.Text = "Name";
+            this.Player7Points.AutoSize = true;
+            this.Player7Points.Location = new System.Drawing.Point(575, 235);
+            this.Player7Points.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Player7Points.Name = "Player7Points";
+            this.Player7Points.Size = new System.Drawing.Size(71, 13);
+            this.Player7Points.TabIndex = 47;
+            this.Player7Points.Text = "Player7Points";
             // 
-            // label15
+            // Player8Points
             // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(986, 488);
-            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(51, 20);
-            this.label15.TabIndex = 29;
-            this.label15.Text = "Score";
+            this.Player8Points.AutoSize = true;
+            this.Player8Points.Location = new System.Drawing.Point(575, 255);
+            this.Player8Points.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Player8Points.Name = "Player8Points";
+            this.Player8Points.Size = new System.Drawing.Size(71, 13);
+            this.Player8Points.TabIndex = 46;
+            this.Player8Points.Text = "Player8Points";
             // 
-            // label16
+            // Player8
             // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(896, 488);
-            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(51, 20);
-            this.label16.TabIndex = 28;
-            this.label16.Text = "Name";
+            this.Player8.AutoSize = true;
+            this.Player8.Location = new System.Drawing.Point(649, 255);
+            this.Player8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Player8.Name = "Player8";
+            this.Player8.Size = new System.Drawing.Size(42, 13);
+            this.Player8.TabIndex = 45;
+            this.Player8.Text = "Player8";
             // 
-            // label5
+            // Player7
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(986, 283);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(51, 20);
-            this.label5.TabIndex = 27;
-            this.label5.Text = "Score";
+            this.Player7.AutoSize = true;
+            this.Player7.Location = new System.Drawing.Point(649, 235);
+            this.Player7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Player7.Name = "Player7";
+            this.Player7.Size = new System.Drawing.Size(42, 13);
+            this.Player7.TabIndex = 44;
+            this.Player7.Text = "Player7";
             // 
-            // label6
+            // Player3
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(896, 283);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(51, 20);
-            this.label6.TabIndex = 26;
-            this.label6.Text = "Name";
+            this.Player3.AutoSize = true;
+            this.Player3.Location = new System.Drawing.Point(649, 154);
+            this.Player3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Player3.Name = "Player3";
+            this.Player3.Size = new System.Drawing.Size(42, 13);
+            this.Player3.TabIndex = 43;
+            this.Player3.Text = "Player3";
             // 
-            // label7
+            // Player4
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(986, 322);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(51, 20);
-            this.label7.TabIndex = 25;
-            this.label7.Text = "Score";
+            this.Player4.AutoSize = true;
+            this.Player4.Location = new System.Drawing.Point(649, 174);
+            this.Player4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Player4.Name = "Player4";
+            this.Player4.Size = new System.Drawing.Size(42, 13);
+            this.Player4.TabIndex = 42;
+            this.Player4.Text = "Player4";
             // 
-            // label8
+            // Player5
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(896, 322);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(51, 20);
-            this.label8.TabIndex = 24;
-            this.label8.Text = "Name";
+            this.Player5.AutoSize = true;
+            this.Player5.Location = new System.Drawing.Point(649, 193);
+            this.Player5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Player5.Name = "Player5";
+            this.Player5.Size = new System.Drawing.Size(42, 13);
+            this.Player5.TabIndex = 41;
+            this.Player5.Text = "Player5";
             // 
-            // label3
+            // Player6
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(986, 232);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(51, 20);
-            this.label3.TabIndex = 23;
-            this.label3.Text = "Score";
+            this.Player6.AutoSize = true;
+            this.Player6.Location = new System.Drawing.Point(649, 216);
+            this.Player6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Player6.Name = "Player6";
+            this.Player6.Size = new System.Drawing.Size(42, 13);
+            this.Player6.TabIndex = 40;
+            this.Player6.Text = "Player6";
             // 
-            // label4
+            // Player2
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(896, 232);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(51, 20);
-            this.label4.TabIndex = 22;
-            this.label4.Text = "Name";
+            this.Player2.AutoSize = true;
+            this.Player2.Location = new System.Drawing.Point(649, 135);
+            this.Player2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Player2.Name = "Player2";
+            this.Player2.Size = new System.Drawing.Size(42, 13);
+            this.Player2.TabIndex = 39;
+            this.Player2.Text = "Player2";
             // 
-            // label1
+            // Player1Points
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(986, 191);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(51, 20);
-            this.label1.TabIndex = 21;
-            this.label1.Text = "Score";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(896, 191);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(51, 20);
-            this.label2.TabIndex = 20;
-            this.label2.Text = "Name";
-            // 
-            // ScoreLabel
-            // 
-            this.ScoreLabel.AutoSize = true;
-            this.ScoreLabel.Location = new System.Drawing.Point(986, 129);
-            this.ScoreLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.ScoreLabel.Name = "ScoreLabel";
-            this.ScoreLabel.Size = new System.Drawing.Size(51, 20);
-            this.ScoreLabel.TabIndex = 19;
-            this.ScoreLabel.Text = "Score";
-            // 
-            // NameLabel
-            // 
-            this.NameLabel.AutoSize = true;
-            this.NameLabel.Location = new System.Drawing.Point(896, 129);
-            this.NameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.NameLabel.Name = "NameLabel";
-            this.NameLabel.Size = new System.Drawing.Size(51, 20);
-            this.NameLabel.TabIndex = 18;
-            this.NameLabel.Text = "Name";
+            this.Player1Points.AutoSize = true;
+            this.Player1Points.Location = new System.Drawing.Point(218, 154);
+            this.Player1Points.Name = "Player1Points";
+            this.Player1Points.Size = new System.Drawing.Size(71, 13);
+            this.Player1Points.TabIndex = 53;
+            this.Player1Points.Text = "Player1Points";
             // 
             // OtherPlayerForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1200, 692);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.label13);
-            this.Controls.Add(this.label14);
-            this.Controls.Add(this.label15);
-            this.Controls.Add(this.label16);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.ScoreLabel);
-            this.Controls.Add(this.NameLabel);
+            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Player1Points);
+            this.Controls.Add(this.Player2Points);
+            this.Controls.Add(this.Player3Points);
+            this.Controls.Add(this.Player5Points);
+            this.Controls.Add(this.Player4Points);
+            this.Controls.Add(this.Player6Points);
+            this.Controls.Add(this.Player7Points);
+            this.Controls.Add(this.Player8Points);
+            this.Controls.Add(this.Player8);
+            this.Controls.Add(this.Player7);
+            this.Controls.Add(this.Player3);
+            this.Controls.Add(this.Player4);
+            this.Controls.Add(this.Player5);
+            this.Controls.Add(this.Player6);
+            this.Controls.Add(this.Player2);
             this.Controls.Add(this.CurrentPlayerUserNameLabel);
             this.Controls.Add(this.TextLabel);
-            this.Controls.Add(this.FirstPlayerAnswerLabel);
+            this.Controls.Add(this.Player1);
             this.Controls.Add(this.QuestionLabel);
             this.Controls.Add(this.MuchHigherButton);
             this.Controls.Add(this.MuchLowerButton);
             this.Controls.Add(this.LowerButton);
             this.Controls.Add(this.HigherButton);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "OtherPlayerForm";
             this.Text = "OtherPlayerForm";
             this.ResumeLayout(false);
@@ -364,26 +320,23 @@
         private System.Windows.Forms.Button LowerButton;
         private System.Windows.Forms.Button HigherButton;
         private System.Windows.Forms.Label QuestionLabel;
-        private System.Windows.Forms.Label FirstPlayerAnswerLabel;
+        private System.Windows.Forms.Label Player1;
         private System.Windows.Forms.Label TextLabel;
         private System.Windows.Forms.Label CurrentPlayerUserNameLabel;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label ScoreLabel;
-        private System.Windows.Forms.Label NameLabel;
+        private System.Windows.Forms.Label Player2Points;
+        private System.Windows.Forms.Label Player3Points;
+        private System.Windows.Forms.Label Player5Points;
+        private System.Windows.Forms.Label Player4Points;
+        private System.Windows.Forms.Label Player6Points;
+        private System.Windows.Forms.Label Player7Points;
+        private System.Windows.Forms.Label Player8Points;
+        private System.Windows.Forms.Label Player8;
+        private System.Windows.Forms.Label Player7;
+        private System.Windows.Forms.Label Player3;
+        private System.Windows.Forms.Label Player4;
+        private System.Windows.Forms.Label Player5;
+        private System.Windows.Forms.Label Player6;
+        private System.Windows.Forms.Label Player2;
+        private System.Windows.Forms.Label Player1Points;
     }
 }

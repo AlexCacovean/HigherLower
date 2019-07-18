@@ -118,7 +118,7 @@ namespace HigherLower
             CurrentPlayerUserNameLabel.Text = PlayerList.AllPlayers[GetNextPlayersId(0)].UserName;
             QuestionLabel.Text = q.Text;
             question = q;
-            FirstPlayerAnswerLabel.Text = q.FirstPlayerAnswer.ToString();
+            Player1.Text = q.FirstPlayerAnswer.ToString();
             
         }
 
@@ -181,85 +181,85 @@ namespace HigherLower
         public void UpdateTable()
         {
             int i = 0;
-            label1.Text = PlayerList.AllPlayers[i].Points.ToString();
-            label2.Text = PlayerList.AllPlayers[i].UserName;
+            Player1.Text = PlayerList.AllPlayers[i].Points.ToString();
+            Player1Points.Text = PlayerList.AllPlayers[i].UserName;
             i++;
             if (PlayerList.AllPlayers[i].UserName != "NewUser")
             {
-                label3.Text = PlayerList.AllPlayers[i].Points.ToString();
-                label4.Text = PlayerList.AllPlayers[i].UserName;
+                Player2.Text = PlayerList.AllPlayers[i].Points.ToString();
+                Player2Points.Text = PlayerList.AllPlayers[i].UserName;
                 i++;
             }
             else
             {
-                label3.Hide();
-                label4.Hide();
+                Player2.Hide();
+                Player2Points.Hide();
             }
             if (PlayerList.AllPlayers[i].UserName != "NewUser")
             {
-                label5.Text = PlayerList.AllPlayers[i].Points.ToString();
-                label6.Text = PlayerList.AllPlayers[i].UserName;
+                Player3.Text = PlayerList.AllPlayers[i].Points.ToString();
+                Player3Points.Text = PlayerList.AllPlayers[i].UserName;
                 i++;
             }
             else
             {
-                label5.Hide();
-                label6.Hide();
+                Player3.Hide();
+                Player3Points.Hide();
             }
             if (PlayerList.AllPlayers[i].UserName != "NewUser")
             {
-                label7.Text = PlayerList.AllPlayers[i].Points.ToString();
-                label8.Text = PlayerList.AllPlayers[i].UserName;
+                Player4.Text = PlayerList.AllPlayers[i].Points.ToString();
+                Player4Points.Text = PlayerList.AllPlayers[i].UserName;
                 i++;
             }
             else
             {
-                label7.Hide();
-                label8.Hide();
+                Player4.Hide();
+                Player4Points.Hide();
             }
             if (PlayerList.AllPlayers[i].UserName != "NewUser")
             {
-                label9.Text = PlayerList.AllPlayers[i].Points.ToString();
-                label10.Text = PlayerList.AllPlayers[i].UserName;
+                Player5.Text = PlayerList.AllPlayers[i].Points.ToString();
+                Player5Points.Text = PlayerList.AllPlayers[i].UserName;
                 i++;
             }
             else
             {
-                label9.Hide();
-                label10.Hide();
+                Player5.Hide();
+                Player5Points.Hide();
             }
             if (PlayerList.AllPlayers[i].UserName != "NewUser")
             {
-                label11.Text = PlayerList.AllPlayers[i].Points.ToString();
-                label12.Text = PlayerList.AllPlayers[i].UserName;
+                Player6.Text = PlayerList.AllPlayers[i].Points.ToString();
+                Player6Points.Text = PlayerList.AllPlayers[i].UserName;
                 i++;
             }
             else
             {
-                label11.Hide();
-                label12.Hide();
+                Player6.Hide();
+                Player6Points.Hide();
             }
             if (PlayerList.AllPlayers[i].UserName != "NewUser")
             {
-                label13.Text = PlayerList.AllPlayers[i].Points.ToString();
-                label14.Text = PlayerList.AllPlayers[i].UserName;
+                Player7.Text = PlayerList.AllPlayers[i].Points.ToString();
+                Player7Points.Text = PlayerList.AllPlayers[i].UserName;
                 i++;
             }
             else
             {
-                label13.Hide();
-                label14.Hide();
+                Player7.Hide();
+                Player7Points.Hide();
             }
             if (PlayerList.AllPlayers[i].UserName != "NewUser")
             {
-                label15.Text = PlayerList.AllPlayers[i].Points.ToString();
-                label16.Text = PlayerList.AllPlayers[i].UserName;
+                Player8.Text = PlayerList.AllPlayers[i].Points.ToString();
+                Player8Points.Text = PlayerList.AllPlayers[i].UserName;
                 i++;
             }
             else
             {
-                label15.Hide();
-                label16.Hide();
+                Player8.Hide();
+                Player8Points.Hide();
             }
         }
     }
