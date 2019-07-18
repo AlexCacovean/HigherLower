@@ -20,7 +20,7 @@ namespace HigherLower
 
         private void AddPlayerButton_Click(object sender, EventArgs e)
         {
-            string currentUserName = UserNameTextBox.Text;
+           string currentUserName = UserNameTextBox.Text;
             if(currentUserName == "")
             {
                 MessageBox.Show("Please enter a Name");
@@ -53,6 +53,14 @@ namespace HigherLower
         {
             FirstPlayerView frm = new FirstPlayerView();
             frm.Show();
+        }
+
+        private void UserNameTextBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Enter)
+            {
+                AddPlayerButton_Click(sender,e);
+            }
         }
     }
 }

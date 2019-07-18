@@ -36,9 +36,10 @@
             // 
             // AddPlayerButton
             // 
-            this.AddPlayerButton.Location = new System.Drawing.Point(218, 227);
+            this.AddPlayerButton.Location = new System.Drawing.Point(327, 349);
+            this.AddPlayerButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.AddPlayerButton.Name = "AddPlayerButton";
-            this.AddPlayerButton.Size = new System.Drawing.Size(75, 23);
+            this.AddPlayerButton.Size = new System.Drawing.Size(112, 35);
             this.AddPlayerButton.TabIndex = 0;
             this.AddPlayerButton.Text = "Add";
             this.AddPlayerButton.UseVisualStyleBackColor = true;
@@ -46,24 +47,29 @@
             // 
             // UserNameTextBox
             // 
-            this.UserNameTextBox.Location = new System.Drawing.Point(207, 154);
+            this.UserNameTextBox.Location = new System.Drawing.Point(310, 237);
+            this.UserNameTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.UserNameTextBox.Name = "UserNameTextBox";
-            this.UserNameTextBox.Size = new System.Drawing.Size(100, 20);
+            this.UserNameTextBox.Size = new System.Drawing.Size(148, 26);
             this.UserNameTextBox.TabIndex = 1;
+            this.UserNameTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.UserNameTextBox_KeyDown);
             // 
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(528, 90);
+            this.listBox1.ItemHeight = 20;
+            this.listBox1.Location = new System.Drawing.Point(792, 138);
+            this.listBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(163, 199);
+            this.listBox1.Size = new System.Drawing.Size(242, 304);
             this.listBox1.TabIndex = 2;
             // 
             // StartButton
             // 
-            this.StartButton.Location = new System.Drawing.Point(356, 355);
+            this.StartButton.Location = new System.Drawing.Point(534, 546);
+            this.StartButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.StartButton.Name = "StartButton";
-            this.StartButton.Size = new System.Drawing.Size(75, 23);
+            this.StartButton.Size = new System.Drawing.Size(112, 35);
             this.StartButton.TabIndex = 3;
             this.StartButton.Text = "Start";
             this.StartButton.UseVisualStyleBackColor = true;
@@ -71,13 +77,14 @@
             // 
             // AddPlayerForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1200, 692);
             this.Controls.Add(this.StartButton);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.UserNameTextBox);
             this.Controls.Add(this.AddPlayerButton);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "AddPlayerForm";
             this.Text = "AddPlayerForm";
             this.ResumeLayout(false);
