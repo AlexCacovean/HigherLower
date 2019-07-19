@@ -33,7 +33,7 @@ namespace HigherLower
                 while((line = sr.ReadLine()) != null)
                 {
                     string name = line.Split('*')[0];
-                    int answer = Convert.ToInt32(line.Split('*')[1]);
+                    int answer = Convert.ToInt32(line[1]);
                     QuestionList.AllQuestions.Add(new Question {
                         Text = name,
                         CorrectAnswer = answer
