@@ -18,6 +18,7 @@ namespace HigherLower
         public FirstPlayerView()
         {
             InitializeComponent();
+            AnswerTextBox.Text = "50";
             question = QuestionList.RndQuestion();
             QuestionLabel.Text = question.Text;
             Player1.Text = currentPlayer.UserName;
