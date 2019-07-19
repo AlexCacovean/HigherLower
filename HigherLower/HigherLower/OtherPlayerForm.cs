@@ -14,7 +14,8 @@ namespace HigherLower
     public partial class OtherPlayerForm : Form
     {
         Player player = new Player();
-        Question question = new Question();
+        Question question;
+        int ThisRoundsAnswer;
         int i;
         int ThisRoundNumber;
 
@@ -30,6 +31,7 @@ namespace HigherLower
         }
         public void ChangeTurn()
         {
+            //MessageBox.Show("The current turns Answer was: "+ ThisRoundsAnswer.ToString());
             this.Close();
             ReInitializePlayers();
             if (ThisRoundNumber <= PlayerList.NumberOfPlayers)
@@ -125,6 +127,7 @@ namespace HigherLower
         {
             //MessageBox.Show(round.ToString());
             ThisRoundNumber = round;
+            ThisRoundsAnswer = q.CorrectAnswer;
             InitializeComponent();
             UpdateTable();
             CurrentPlayerUserNameLabel.Text = PlayerList.AllPlayers[GetNextPlayersId(0)].UserName;

@@ -14,7 +14,7 @@ namespace HigherLower
     {
         Player currentPlayer = PlayerList.AllPlayers[0];
 
-        Question question = new Question();
+        Question question;
         int ThisRoundNumber;
         public FirstPlayerView(int round)
         {
