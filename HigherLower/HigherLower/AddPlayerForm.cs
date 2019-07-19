@@ -51,7 +51,7 @@ namespace HigherLower
 
         private void StartButton_Click(object sender, EventArgs e)
         {
-            FirstPlayerView frm = new FirstPlayerView();
+            FirstPlayerView frm = new FirstPlayerView(0);
             frm.Show();
         }
 

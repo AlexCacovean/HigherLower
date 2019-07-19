@@ -10,11 +10,13 @@ using System.Windows.Forms;
 
 namespace HigherLower
 {
+   
     public partial class OtherPlayerForm : Form
     {
         Player player = new Player();
         Question question = new Question();
         int i;
+        int ThisRoundNumber;
 
         private void ReInitializePlayers()
         {
@@ -30,8 +32,16 @@ namespace HigherLower
         {
             this.Close();
             ReInitializePlayers();
-            FirstPlayerView nextRoundView = new FirstPlayerView();
-            nextRoundView.Show();
+            if (ThisRoundNumber <= PlayerList.NumberOfPlayers)
+            {
+                FirstPlayerView nextRoundView = new FirstPlayerView(ThisRoundNumber + 1);
+                nextRoundView.Show();
+            }
+            else
+            {
+                Leaderboard leaderboard = new Leaderboard();
+                leaderboard.Show();
+            }
         }
 
         public void GivePointsToCurrentPlayer()
@@ -111,8 +121,10 @@ namespace HigherLower
             possibleAnswers answer = possibleAnswers.MuchHigher;
             player.CurrentAnswer = answer;
         }
-        public OtherPlayerForm(Question q)
+        public OtherPlayerForm(Question q,int round)
         {
+            //MessageBox.Show(round.ToString());
+            ThisRoundNumber = round;
             InitializeComponent();
             UpdateTable();
             CurrentPlayerUserNameLabel.Text = PlayerList.AllPlayers[GetNextPlayersId(0)].UserName;

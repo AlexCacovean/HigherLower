@@ -15,9 +15,11 @@ namespace HigherLower
         Player currentPlayer = PlayerList.AllPlayers[0];
 
         Question question = new Question();
-        public FirstPlayerView()
+        int ThisRoundNumber;
+        public FirstPlayerView(int round)
         {
             InitializeComponent();
+            ThisRoundNumber = round;
             AnswerTextBox.Text = "50";
             question = QuestionList.RndQuestion();
             QuestionLabel.Text = question.Text;
@@ -36,7 +38,7 @@ namespace HigherLower
             {
                 question.FirstPlayerAnswer = Int32.Parse(sAnswerProcent);
                 this.Close();
-                OtherPlayerForm newfrm = new OtherPlayerForm(question);
+                OtherPlayerForm newfrm = new OtherPlayerForm(question, ThisRoundNumber);
                 newfrm.Show();
             }
             else
