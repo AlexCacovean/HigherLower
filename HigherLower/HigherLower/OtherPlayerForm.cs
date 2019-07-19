@@ -147,6 +147,8 @@ namespace HigherLower
         {
             GetAnswerFromPlayer();
             ChangePlayer();
+            timer2.Start();
+            time2 = 10;
             if (i <= 7)
             {
                 PlayerList.AllPlayers[i].CurrentAnswer = possibleAnswers.MuchHigher;
@@ -159,6 +161,8 @@ namespace HigherLower
         {
             GetAnswerFromPlayer();
             ChangePlayer();
+            timer2.Start();
+            time2 = 10;
             if (i <= 7) 
             {
                 PlayerList.AllPlayers[i].CurrentAnswer = possibleAnswers.Higher;
@@ -171,6 +175,8 @@ namespace HigherLower
         {
             GetAnswerFromPlayer();
             ChangePlayer();
+            timer2.Start();
+            time2 = 10;
             if (i <= 7)
             {
                 PlayerList.AllPlayers[i].CurrentAnswer = possibleAnswers.Lower;
@@ -183,6 +189,8 @@ namespace HigherLower
         {
             GetAnswerFromPlayer();
             ChangePlayer();
+            timer2.Start();
+            time2 = 10;
             if (i <= 7)
             {
                 PlayerList.AllPlayers[i].CurrentAnswer = possibleAnswers.MuchLower;
@@ -274,5 +282,17 @@ namespace HigherLower
                 Player8Points.Hide();
             }
         }
+        int time2 = 10;
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            time2--;
+            seconds2.Text = time2.ToString();
+            if (time2 == 0)
+            {
+                timer2.Stop();
+                ChangePlayer();
+            }
+        }
+
     }
 }

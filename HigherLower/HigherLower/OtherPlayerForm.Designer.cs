@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.MuchHigherButton = new System.Windows.Forms.Button();
             this.MuchLowerButton = new System.Windows.Forms.Button();
             this.LowerButton = new System.Windows.Forms.Button();
@@ -51,6 +52,10 @@
             this.Player6 = new System.Windows.Forms.Label();
             this.Player2 = new System.Windows.Forms.Label();
             this.Player1Points = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.seconds2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // MuchHigherButton
@@ -278,12 +283,51 @@
             this.Player1Points.TabIndex = 53;
             this.Player1Points.Text = "Player1Points";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(711, 398);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(47, 13);
+            this.label3.TabIndex = 59;
+            this.label3.Text = "seconds";
+            // 
+            // seconds2
+            // 
+            this.seconds2.AutoSize = true;
+            this.seconds2.Location = new System.Drawing.Point(689, 398);
+            this.seconds2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.seconds2.Name = "seconds2";
+            this.seconds2.Size = new System.Drawing.Size(19, 13);
+            this.seconds2.TabIndex = 58;
+            this.seconds2.Text = "10";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(642, 398);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(50, 13);
+            this.label1.TabIndex = 57;
+            this.label1.Text = "Time left:";
+            // 
+            // timer2
+            // 
+            this.timer2.Enabled = true;
+            this.timer2.Interval = 1000;
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            // 
             // OtherPlayerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.seconds2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.Player1Points);
             this.Controls.Add(this.Player2Points);
             this.Controls.Add(this.Player3Points);
@@ -338,5 +382,9 @@
         private System.Windows.Forms.Label Player6;
         private System.Windows.Forms.Label Player2;
         private System.Windows.Forms.Label Player1Points;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label seconds2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Timer timer2;
     }
 }
