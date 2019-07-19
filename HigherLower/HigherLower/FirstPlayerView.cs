@@ -23,6 +23,7 @@ namespace HigherLower
             Player1.Text = currentPlayer.UserName;
             UpdateTable();
             currentPlayer.IsStartingPlayer = true;
+            timer1.Start();
         }
 
         private void FirstPlayerSubmitButtonClick(object sender, EventArgs e)
@@ -42,6 +43,18 @@ namespace HigherLower
                 MessageBox.Show("Answer is not a valid %");
             }
 
+        }
+        int time = 20;
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            time--;
+            seconds.Text = time.ToString();
+            if (time == 0)
+            {
+                timer1.Stop();
+                FirstPlayerSubmitButtonClick(sender, e);
+
+            }
         }
         public void UpdateTable()
         {
